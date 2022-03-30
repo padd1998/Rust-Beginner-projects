@@ -1,0 +1,13 @@
+use file_encrypt;
+use std::env;
+use std::fs;
+
+fn main() {
+    let filename: Vec<String> = env::args().collect();
+    let contents: String =  match fs::read_to_string(filename[1].clone()) {
+        Ok(contents) => contents,
+        Err(e) => e.to_string(),
+    };
+    let encrypted_string = file_encrypt::encrypt(contents);
+    println!("Encrypted string is {}", encrypted_string);
+}
