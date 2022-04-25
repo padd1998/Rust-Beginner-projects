@@ -1,0 +1,3 @@
+A 2 player chess game in Rust. 
+It has no AI to play against. 
+It also doesn't end when the King is taken, something I may or may not remedy. 
