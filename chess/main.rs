@@ -119,19 +119,19 @@ pub enum Pieces {
 impl Display for Pieces {
     fn fmt(&self, f: &mut Formatter) -> Result {
         match self {
-            &Pieces::Pawn => write!(f, " P")?,
-            &Pieces::King => write!(f, " K")?,
-            &Pieces::Queen => write!(f, " Q")?,
-            &Pieces::Rook => write!(f, " R")?,
-            &Pieces::Bishop => write!(f, " B")?,
-            &Pieces::Horse => write!(f, " H")?,
-            &Pieces::AIPawn => write!(f, "AP")?,
-            &Pieces::AIHorse => write!(f, "AH")?,
-            &Pieces::AIRook => write!(f, "AR")?,
-            &Pieces::AIKing => write!(f, "AK")?,
-            &Pieces::AIQueen => write!(f, "AQ")?,
-            &Pieces::AIBishop => write!(f, "AB")?,
-            &Pieces::Empty => write!(f, " .")?
+            &Pieces::Pawn => write!(f, "♙")?,
+            &Pieces::King => write!(f, "♕")?,
+            &Pieces::Queen => write!(f, "♔")?,
+            &Pieces::Rook => write!(f, "♖")?,
+            &Pieces::Bishop => write!(f, "♗")?,
+            &Pieces::Horse => write!(f, "♘")?,
+            &Pieces::AIPawn => write!(f, "♟")?,
+            &Pieces::AIHorse => write!(f, "♞")?,
+            &Pieces::AIRook => write!(f, "♜")?,
+            &Pieces::AIKing => write!(f, "♛")?,
+            &Pieces::AIQueen => write!(f, "♚")?,
+            &Pieces::AIBishop => write!(f, "♝")?,
+            &Pieces::Empty => write!(f, ".")?
         };
 
         Ok(())
